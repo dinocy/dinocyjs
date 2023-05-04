@@ -12,6 +12,6 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0",
+  "packageManager": "pnpm@7.32.2",
   "name": "dinocyjs"
 }
