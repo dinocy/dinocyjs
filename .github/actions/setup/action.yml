@@ -1,0 +1,19 @@
+name: Setup
+description: Setup Node.js, pnpm, and install dependencies
+
+runs:
+  using: composite
+  steps:
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2.2.4
+      with:
+        version: '7'
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install
