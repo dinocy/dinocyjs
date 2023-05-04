@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  setup:
+  lint:
     name: Setup
     runs-on: ubuntu-latest
     steps:
@@ -16,10 +16,5 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-  lint:
-    name: Lint
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Lint
+      - name: Run Lint
         run: pnpm lint
