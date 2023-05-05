@@ -7,5 +7,12 @@
     "dist",
     "build",
     "node_modules"
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@theme/*": ["src/theme/*"]
+    }
+  }
 }
