@@ -13,6 +13,7 @@
     "eslint": "^8.0.0",
     "eslint-config-dinocy": "workspace:*",
     "react": "^17.0.2",
+    "sass": "^1.62.1",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.0"
   }
