@@ -7,7 +7,7 @@ importers:
       eslint:
         specifier: ^8.0.0
         version: 8.39.0
-      eslint-config-custom:
+      eslint-config-dinocy:
         specifier: workspace:*
         version: link:packages/eslint-config-custom
       prettier:
@@ -41,7 +41,7 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.7
         version: 18.0.9
-      eslint-config-custom:
+      eslint-config-dinocy:
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
       tsconfig:
@@ -75,7 +75,7 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.7
         version: 18.0.9
-      eslint-config-custom:
+      eslint-config-dinocy:
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
       tsconfig:
@@ -113,7 +113,7 @@ importers:
       eslint:
         specifier: ^8.0.0
         version: 8.39.0
-      eslint-config-custom:
+      eslint-config-dinocy:
         specifier: workspace:*
         version: link:../eslint-config-custom
       react:
