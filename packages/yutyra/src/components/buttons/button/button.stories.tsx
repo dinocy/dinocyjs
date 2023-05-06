@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./button";
+import { Meta, StoryObj } from '@storybook/react';
+import { Button } from './button';
 
 const meta = {
-  title: "Buttons/Button",
+  title: 'Buttons/Button',
   component: Button,
 } satisfies Meta<typeof Button>;
 
@@ -12,15 +12,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "button",
-    variant: "solid",
-    size: "md",
-    color: "primary",
+    children: 'button',
+    variant: 'solid',
+    size: 'md',
+    color: 'primary',
   },
 };
 
 export const Solid = () => (
-  <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
     <Button color="primary" size="sm">
       primary
     </Button>
@@ -40,7 +40,7 @@ export const Solid = () => (
 );
 
 export const Outline = () => (
-  <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+  <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
     <Button variant="outline" color="primary" size="sm">
       primary
     </Button>

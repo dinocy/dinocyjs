@@ -1,10 +1,10 @@
-import { createContext, ReactNode, useEffect } from "react";
+import { createContext, ReactNode, useEffect } from 'react';
 
-import "./theme.scss";
+import './theme.scss';
 
-type Theme = "default" | "simple";
+type Theme = 'default' | 'simple';
 
-export const ThemeContext = createContext<Theme>("default");
+export const ThemeContext = createContext<Theme>('default');
 
 interface ThemeProviderProps {
   theme?: Theme;
@@ -12,12 +12,12 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider = ({
-  theme = "default",
+  theme = 'default',
   children,
 }: ThemeProviderProps) => {
   useEffect(() => {
     const root = window.document.documentElement;
-    root.setAttribute("data-theme", theme);
+    root.setAttribute('data-theme', theme);
   }, [theme]);
   return (
     <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
