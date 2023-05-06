@@ -15,5 +15,6 @@ export const Primary: Story = {
     children: "button",
     variant: "solid",
     size: "md",
+    color: "primary",
   },
 };
